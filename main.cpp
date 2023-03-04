@@ -78,7 +78,6 @@ bool evalIsEquationTrue(std::string equation) {
         return false;
 
     for (int cPart = 0; cPart < parts.size(); cPart++) {
-
         bool wasLastCharOperator = true;
         std::string equationPart = parts[cPart];
 
@@ -123,7 +122,6 @@ bool evalIsEquationTrue(std::string equation) {
         totals.push_back(numbers[0]);
 
         for (int i = 0; i < numbers.size() - 1; i++) {
-
             const int currentNum = numbers[i + 1];
             const Operator currentOp = operators[i];
 
